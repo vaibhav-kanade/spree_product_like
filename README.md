@@ -1,5 +1,9 @@
 SpreeProductLike
 ================
+[![Build Status](https://travis-ci.org/netguru/spree_product_like.png)](https://travis-ci.org/netguru/spree_product_like)
+[![Coverage Status](https://coveralls.io/repos/netguru/spree_product_like/badge.png?branch=master)](https://coveralls.io/r/netguru/spree_product_like?branch=master)
+[![Code Climate](https://codeclimate.com/github/netguru/spree_product_like.png)](https://codeclimate.com/github/netguru/spree_product_like)
+
 
 Introduction goes here.
 
