@@ -4,7 +4,15 @@ Gem::Specification.new do |s|
   s.name        = 'spree_product_like'
   s.version     = '2.1.4'
   s.summary     = 'Add a like/fav button to your site'
-  s.description = ''
+  s.description = "
+                  As a logged in user: 
+                    - i can go to product page and like the product 
+                    - see if I liked the product already
+                    - go to my 'favourites' products tab 
+
+                  As a logged in admin i can: 
+                    - see list of products ordered by likes count"
+
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Netguru'
