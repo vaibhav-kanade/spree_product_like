@@ -24,9 +24,10 @@ Demo
 
 If you want to see how it works, visit [our demo shop](https://spree-product-like.herokuapp.com).
 
-You can login as a customre using those credentials `customer@example.com` / `customer`
+You can login:
 
-You can login as an admin using those credentials `salesman@example.com` / `salesman`
+  * as a customer `customer@example.com` / `customer`
+  * as an admin `salesman@example.com` / `salesman`
 
 Installation
 ------------
