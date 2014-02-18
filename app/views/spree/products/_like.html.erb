@@ -1,6 +1,8 @@
 <%- if current_spree_user.present? %>
   <div class="product-likes">
   <%- if current_spree_user.admin? %>
+    <%= pluralize(@product.likes_count, 'like') %>
+  <%- else %>
     <%- if @product.liked_by?(current_spree_user) %>
       <%= button_to unlike_product_path(id: @product.id), class: 'medium default', id: 'like-button', type: :submit, method: :delete do %>
         Unlike
