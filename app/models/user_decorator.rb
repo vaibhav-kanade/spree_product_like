@@ -3,5 +3,6 @@ Spree::User.class_eval do
 
   def like(product)
     self.likes.new(product: product) unless likes.exists?(product: product)
+    save
   end
 end
