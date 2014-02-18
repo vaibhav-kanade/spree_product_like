@@ -1,5 +1,12 @@
 <%- if current_spree_user.present? %>
+  <%- if @product.liked_by?(current_spree_user) %>
+    <%= button_to unlike_product_path(id: @product.id), class: 'medium default', id: 'like-button', type: :submit, method: :delete do %>
+      Unlike
+    <%- end %>
+  <%- else %>
     <%= button_to like_product_path(id: @product.id), class: 'medium secondary', id: 'like-button', type: :submit do %>
       Like
     <%- end %>
+  <%- end %>
 <%- end %>
+

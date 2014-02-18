@@ -4,6 +4,11 @@ class Spree::LikesController < Spree::StoreController
     redirect_to_referer
   end
 
+  def unlike_product
+    product.likes.where(user: current_spree_user).first.try(:destroy)
+    redirect_to_referer
+  end
+
   def product
     @product ||= Spree::Product.find(params[:id])
   end
