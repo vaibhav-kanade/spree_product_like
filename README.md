@@ -5,6 +5,10 @@ SpreeProductLike
 [![Code Climate](https://codeclimate.com/github/netguru/spree_product_like.png)](https://codeclimate.com/github/netguru/spree_product_like)
 
 This extensions adds a like/fav button for products.
+
+How it works?
+-------------
+
 As a logged in user:
 
   - i can go to product page and like the product 
@@ -14,6 +18,14 @@ As a logged in user:
 As a logged in admin i can: 
 
   - see list of products ordered by likes count 
+
+Demo
+----
+
+If you want to see how it works, visit [our demo shop](https://spree-product-like.herokuapp.com).
+
+You can login as a customre using those credentials `customer@example.com` / `customer`
+You can login as an admin using those credentials `salesman@example.com` / `salesman`
 
 Installation
 ------------
