@@ -9,11 +9,13 @@ class Spree::LikesController < Spree::StoreController
     redirect_to_referer
   end
 
+  private
+
   def product
     @product ||= Spree::Product.find(params[:id])
   end
 
   def redirect_to_referer
-    redirect_to request.referer
+    redirect_to request.referer || root_url
   end
 end
