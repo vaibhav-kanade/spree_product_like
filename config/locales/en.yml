@@ -7,3 +7,6 @@ en:
       like: 'like'
       unlike: 'unlike'
 
+    admin:
+      products_ranking: 'Products Ranking'
+      products_ranking_title: 'Products Ranking'
