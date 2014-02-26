@@ -10,3 +10,5 @@ en:
     admin:
       products_ranking: 'Products Ranking'
       products_ranking_title: 'Products Ranking'
+      likes_count: 'Likes count'
+      no_liked_products: "There's no liked products"
