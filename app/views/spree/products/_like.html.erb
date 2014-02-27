@@ -1,17 +1,20 @@
-<%- if current_spree_user.present? %>
-  <div class="product-likes">
+<% if current_spree_user.present? %>
+  <div class="product-likes" data-hook="product-likes">
 
-  <%- if current_spree_user.admin? %>
+  <% if current_spree_user.admin? %>
     <%= pluralize(@product.likes_count, t('spree_product_like.likes.like')) %>
 
-  <%- else %>
-    <%- if @product.liked_by?(current_spree_user) %>
-      <%= button_to t('spree_product_like.likes.unlike'), unlike_product_path(id: @product.id), class: 'medium default', id: 'like-button', type: :submit, method: :delete %>
-
-    <%- else %>
-      <%= button_to t('spree_product_like.likes.like'), like_product_path(id: @product.id), class: 'medium secondary', id: 'like-button', type: :submit %>
-    <%- end %>
-  <%- end %>
+  <% else %>
+    <% if @product.liked_by?(current_spree_user) %>
+      <div data-hook="product-dislike-button">
+        <%= button_to @product.likes_count, unlike_product_path(id: @product.id), id: 'like-button', class: 'button dislike', title: t('spree_product_like.likes.unlike'), type: :submit, method: :delete %>
+      </div>
+    <% else %>
+      <div data-hook="product-like-button">
+        <%= button_to @product.likes_count, like_product_path(id: @product.id), id: 'like-button', class: 'button like', title: t('spree_product_like.likes.like'), type: :submit %>
+      </div>
+    <% end %>
+  <% end %>
 
   </div>
-<%- end %>
+<% end %>

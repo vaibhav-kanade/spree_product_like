@@ -2,6 +2,21 @@
  *= require store/spree_frontend
 */
 .product-likes {
-  float: right;
-  line-height: 40px;
+  .button {
+    border: none;
+    width: 50px;
+    height: 50px;
+
+    &.dislike {
+      color: white;
+      background: white image-url('like.png');
+      background-size: 100% auto;
+    }
+
+    &.like {
+      color: black;
+      background: white image-url('like_outline.png');
+      background-size: 100% auto;
+    }
+  }
 }
