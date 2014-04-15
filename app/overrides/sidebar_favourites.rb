@@ -5,5 +5,5 @@ Deface::Override.new(
   text: "<%= tab :favourites,
                  url: products_favourites_path,
                  label: t('spree_product_like.favourites'),
-                 match_path: '/favourites' %>"
+                 match_path: '/favourites' if current_spree_user %>"
 )
