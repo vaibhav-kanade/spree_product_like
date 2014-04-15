@@ -3,6 +3,7 @@
 
 en:
   spree_product_like:
+    favourites: 'Favourites'
     likes:
       like: 'like'
       unlike: 'unlike'
