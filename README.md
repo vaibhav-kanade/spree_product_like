@@ -9,15 +9,19 @@ This extensions adds a like/fav button for products.
 How it works?
 -------------
 
-As a logged in user:
+As a logged in user I can:
 
   - i can go to product page and like the product 
   - see if I liked the product already
   - go to my 'favourites' products tab 
 
-As a logged in admin i can: 
+As a logged in admin I can: 
 
   - see list of products ordered by likes count 
+
+As a logged in admin I cannot: 
+
+  - like the product 
 
 Demo
 ----
