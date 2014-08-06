@@ -56,4 +56,9 @@ bundle exec rake test_app
 bundle exec rspec spec
 ```
 
+Read more
+------------
+
+[Add Like Button to your Spree Store](https://netguru.co/blog/posts/add-like-button-to-your-spree-store).
+
 Copyright (c) 2014 [Netguru](http://netguru.co), released under the New BSD License
