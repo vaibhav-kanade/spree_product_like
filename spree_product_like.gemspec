@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_like'
-  s.version     = '2.1.4'
+  s.version     = '2.3.3'
   s.summary     = 'Add a like/fav button to your site'
   s.description = "
                   As a logged in user: 
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.1.4'
+  s.add_dependency 'spree_core', '~> 2.3.3'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'
